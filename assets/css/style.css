@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #004d40;
+}
+
+body {
+    background-color: #00695c;
+}
+
+.imgs {
+    align-content: center;
+}
+
+.titleImg {
+    align-content: center;
+}
+
