@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Invader Zim Hangman</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -14,7 +15,7 @@
     <!-- nav bar -->
     <nav>
         <div class="nav-wrapper">
-                <a href="#" class="brand-logo">INVADER ZIM HANGMAN</a>
+                <a href="#" class="brand-logo"></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
         </div>
     </nav>
@@ -23,15 +24,46 @@
         
             <!-- first row w/ three columns -->
             <div class="row">
-                    <div class="col s3">
-                        <img class="imgs" src="assets/images/gir2.png">
+                    <div class="col s12">
+                        <img class="titleImg" src="assets/images/ZIMMM.png">
                     </div>
-                    <div class="col s9">
-                        <img class="titleImg" src="assets/images/title2.png">
-                    </div>
-                    <div class="col s3">
-                        <img class="imgs" src="assets/images/zim2.png">
-                    </div>
+            </div>
+
+            <!-- second row with hangman blanks -->
+
+            <div class="row">
+                <div class="col s1">
+                    <p></p>
+                </div>
+                <div class="col s10">
+                        <h2 id="word"></h2>
+                </div>
+                <div class="col s1">
+                    <span id="player"></span>
+                </div>
+            </div>
+
+            <!-- third row with info about game -->
+
+            <div class="row row3">
+                <div class="col s1">
+                    <p></p>
+                </div>
+                <!-- THIS IS THE GAME, DON'T TOUCH -->
+                <div class="col s10">
+                    <h1>type letters to BEGIN!!!</h1>
+                    <!-- <h2 id="word"></h2> -->
+                    <h3>guessed letters: <span id="letters"></span></h3>
+                    <h4>guesses left: <span id="guesses">10</span></h4>
+                    <h4>wins: <span id="wins">0</span></h4>
+                    <h4>losses: <span id="losses">0</span></h4>
+                </div>
+                <div class="col s1">
+                    <p></p>
+                </div>
+
+
+
             </div>
 
 
@@ -41,7 +73,8 @@
 
 
 
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 </html>
