@@ -65,9 +65,10 @@ const displayWord = _ => {
         
         //     document.getElementById("player").innerHTML="<embed src=\""+soundFile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
         // }
+        alert(`congrats human! the word was ${word}`)
         // resets
         reset()
-        alert(`congrats human! the word was ${word}`)
+        
     }
     
 }
@@ -88,10 +89,11 @@ const checkLetter = letter => {
         // if they're out of guesses
         if (guesses <= 0) {
             losses++
+            alert(`you suck human! the word was ${word}`)
             // reset game
             reset()
             // if the user loses, what will happen*****************
-            alert(`you suck human! the word was ${word}`)
+            
             }
         }
      }
