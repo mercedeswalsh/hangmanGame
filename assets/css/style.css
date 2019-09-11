@@ -19,3 +19,8 @@ body {
     align-content: center;
 }
 
+#borderimg {
+    border-image-source: "assets/images/zim2.png";
+    border-image-repeat: repeat;
+  }
+

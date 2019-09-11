@@ -1,5 +1,5 @@
 // array of words to be guessed
-const words = ['zim', 'gir', 'dib', 'gaz', 'nickelodeon', 'tallestred', 'tallestpurple', 'irk', 'doom']
+const words = ['zim', 'gir', 'dib', 'gaz', 'nickelodeon', 'tallestred', 'tallestpurple', 'irk', 'doom', 'invader', 'foodcourtia', 'irken']
 
 // to make a random word from array be chosen
 const getRandomWord = function () {
@@ -55,16 +55,22 @@ const displayWord = _ => {
         wins++
         // if the user wins, what will happen*****************
         // attempting to get audio to play
-        // function playRandomWinSound () { 
-        //     var winSounds = ["assets/audio/anotherWin.mp3",
-        //                  "assets/audio/thatGameWasEasy.mp3", 
-        //                  "assets/audio/thatWasEasy.mp3", 
-        //                  " assets/audio/victoryIsMine.mp3"]
+
+            var winSounds = ["./assets/audio/anotherWin.mp3",
+                         "./assets/audio/thatGameWasEasy.mp3", 
+                         "./assets/audio/thatWasEasy.mp3", 
+                         "./assets/audio/victoryIsMine.mp3"]
             
-        //     var soundFile = winSounds[Math.floor(Math.random()*loseSounds.length)];
+            var soundFile = winSounds[Math.floor(Math.random()*winSounds.length)];
+
+            var audioElement = document.createElement('audio');
+            audioElement.setAttribute('src', soundFile);
+            console.log(audioElement);
         
-        //     document.getElementById("player").innerHTML="<embed src=\""+soundFile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
-        // }
+            // document.getElementById("player").innerHTML="<embed src=\""+soundFile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+            // document.getElementById('player').play
+            // console.log(document.getElementById('player'));
+        
         alert(`congrats human! the word was ${word}`)
         // resets
         reset()
