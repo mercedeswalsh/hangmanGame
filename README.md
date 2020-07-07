@@ -16,7 +16,7 @@
 
 **Link to deployed version of app:**
 
-- https://mercedeswalsh.github.io/invaderZimHangmanGame/
+- https://mercedeswalsh.github.io/invaderZimHangman/
 
 ---
 
